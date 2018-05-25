@@ -74,6 +74,7 @@
             this.LHard.TabStop = true;
             this.LHard.Text = "Сложно(7)";
             this.LHard.UseVisualStyleBackColor = true;
+            this.LHard.CheckedChanged += new System.EventHandler(this.LHard_CheckedChanged);
             // 
             // LAverage
             // 
@@ -85,6 +86,7 @@
             this.LAverage.TabStop = true;
             this.LAverage.Text = "Нормально(5)";
             this.LAverage.UseVisualStyleBackColor = true;
+            this.LAverage.CheckedChanged += new System.EventHandler(this.LAverage_CheckedChanged);
             // 
             // LEasy
             // 
@@ -96,6 +98,7 @@
             this.LEasy.TabStop = true;
             this.LEasy.Text = "Легко(3)";
             this.LEasy.UseVisualStyleBackColor = true;
+            this.LEasy.CheckedChanged += new System.EventHandler(this.LEasy_CheckedChanged);
             // 
             // label1
             // 
@@ -129,9 +132,11 @@
             // textNum
             // 
             this.textNum.Location = new System.Drawing.Point(7, 20);
+            this.textNum.MaxLength = 7;
             this.textNum.Name = "textNum";
             this.textNum.Size = new System.Drawing.Size(87, 20);
             this.textNum.TabIndex = 1;
+            this.textNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textNum_KeyPress);
             // 
             // button1
             // 
